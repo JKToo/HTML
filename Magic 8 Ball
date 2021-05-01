@@ -1,0 +1,24 @@
+<doctype html> 
+<html> 
+ <head> 
+  <title> Magic 8 Ball </title> 
+  <script type="text/javascript" src="http://balance3e.com/random.js"></script>
+
+  </head>
+  
+  <body style="background-color:lightgrey">
+<div style="text-align:center">
+  Go ahead, Ask something.
+   <input type="text" size=100 id="qBox" value="">
+   
+<img src="http://balance3e.com/Images/8ball.gif" alt="8ball" 
+onclick="document.getElementById('outputDiv').innerHTML=
+RandomOneOf(['Yes', 'No', 'It is unlikely', 'It is very likely', 'Not sure'])">
+<hr>
+</div>
+
+<div style="text-align:center" id="outputDiv"></div>
+ </body>
+</html>
+
+ 

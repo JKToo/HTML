@@ -1,0 +1,36 @@
+<doctype html> 
+<html> 
+ <head> 
+  <title> Calculate Distance </title> 
+
+  </head>
+  
+  <body style="background-color:lightgrey">
+<p>  
+Enter coordinates 1:(
+<input type="text" id="x1Box" size=5 value=""> , 
+<input type="text" id="y1Box" size=5 value="">) 
+<br>
+Enter coordinates 2:(
+<input type="text" id="x2Box" size=5 value=""> ,
+<input type="text" id="y2Box" size=5 value="">)
+</p><br>
+<input type="button" value="What's the distance?"
+		onclick="x1=(document.getElementById('x1Box').value);
+	y1=(document.getElementById('y1Box').value);
+	x2=(document.getElementById('x2Box').value);
+	y2=(document.getElementById('y2Box').value);
+	x=(x1-x2);
+	xresult=x*x;
+	y=y1-y2;
+	yresult=y*y;
+	xy=xresult+yresult;
+	total=Math.sqrt(xy);
+	document.getElementById('outputDiv').innerHTML=
+		total">
+<hr>
+<div style="text-align:center" id="outputDiv"></div>
+ </body>
+</html>
+
+ 

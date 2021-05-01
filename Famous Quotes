@@ -1,0 +1,32 @@
+<doctype html>
+<html>
+ <head>
+  <title> Quotes </title>
+ </head>
+
+ <body style="background-color:lightgrey"> 
+ 
+ <h3 style="text-align:center">Three Quotes:</h3>
+<img src="http://www.thisismelo.com/wp-content/uploads/sites/31/2016/12/carmelo-anthony-basketball-usa-basketball-exhibition-game-china-usa-1-850x560-640x422.jpg" alt="Carmelo Anthony" height="100">
+	<input type="button" value="Carmelo Anthony"
+	onclick="document.getElementById('outputDiv').innerHTML=
+    'Every Morning You Have Two Choices: Continue To Sleep With Your Dreams, ' + 
+	'Or Wake Up and Chase Them \- <i> Carmelo Anthony</i>.';">
+	
+<img src="http://epmgaa.media.clients.ellingtoncms.com/img/photos/2018/03/21/MLK_t750x550.jpg?d885fc46c41745b3b5de550c70336c1b382931d2" alt="Martin Luther King Jr" height="100"> 
+	<input type="button" value="MLK"
+	onclick="document.getElementById('outputDiv').innerHTML=
+    'If you can\'t fly then run, if you can\'t run then walk, if you can\'t walk then crawl, but whatever you do you ' +
+	' have to keep moving forward \- <i> Martin Luther King Jr </i>.';">
+	
+<img src="https://cdn.vox-cdn.com/thumbor/OB4Z36d98m0qdglbCcVX_VnxpLQ=/0x86:706x557/920x613/filters:focal(0x86:706x557):format(webp)/cdn.vox-cdn.com/assets/738480/stevejobs.png" alt="Steve Jobs" height="100">
+	<input type="button" value="Steve Jobs"
+	onclick="document.getElementById('outputDiv').innerHTML=
+    'Your time is limited, so don\'t waste it living someone else\'s life \- <i>Steve Jobs</i>.';">
+
+	<hr>
+	
+	<div id="outputDiv">
+	</div>
+ </body>
+</html>

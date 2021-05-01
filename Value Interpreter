@@ -1,0 +1,35 @@
+<doctype html>
+<html>
+ <head>
+  <title> Classify </title>
+  <script type="text/javascript">
+  function numberType()
+  {
+		numb=parseFloat(document.getElementById('nBox').value);
+    if (numb > 0) {
+        document.getElementById("outputDiv").innerHTML = "That number is a positive value";
+    }
+	else if (numb < 0) {
+		document.getElementById("outputDiv").innerHTML = "That number is a negative value";
+		 }
+      else {
+		document.getElementById("outputDiv").innerHTML = "It is a zero value number";
+			}
+  }
+   </script>
+ </head>
+
+  <body style="background-color:lightgrey">
+  <h2 style="text-align:center"> Value interpreter </h2>
+   <h4 style="text-align:center">
+  Enter any number you'd like:
+  <input type="text" size=10 id="nBox" value="">
+  <br>
+  <input type="button" value="What's the number type?"
+	onclick="numberType();">
+   <hr>
+   </h4>
+   <div style="text-align:center" id="outputDiv"></div>
+  
+  </body>
+</html>

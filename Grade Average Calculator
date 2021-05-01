@@ -1,0 +1,65 @@
+<doctype html> 
+<html> 
+ <head> 
+  <title> Average </title> 
+ </head> 
+ 
+ <body style="background-color:lightgrey"> 
+ <p>
+ Enter Discussion and Quiz Average: 
+ <input type="text" id="dandqBox" size=5 value=""> <br>
+ 
+ Enter First Draft Average: 
+ <input type="text" id="firstdraftBox" size=5 value=""> <br>
+ 
+ Enter In Class Revision Average:  
+ <input type="text" id="classrevisionBox" size=5 value=""> <br>
+ 
+ Enter Research Project Draft Average:
+ <input type="text" id="projectdraftBox" size=5 value=""> <br>
+ 
+ Enter Project Revision Average:
+ <input type="text" id="projectrevisionBox" size=5 value=""> <br>
+ 
+ Enter In Class Essay #2 Average:
+ <input type="text" id="classessayBox" size=5 value=""> <br>
+ 
+ Enter Final Exam Average:
+ <input type="text" id="finalBox" size=5 value=""> <br>
+ 
+ </p>
+ 
+  <input type="button" value="Click for Overall Average"
+     onclick="dandq=parseFloat(document.getElementById('dandqBox').value);
+	dbq=dandq * (30/100);
+	
+			  firstdraft=parseFloat(document.getElementById('firstdraftBox').value);
+	fd=firstdraft * (1/100);
+	
+			  classrevision=parseFloat(document.getElementById('classrevisionBox').value);
+	crv=classrevision * (4/100);
+	
+			  projectdraft=parseFloat(document.getElementById('projectdraftBox').value);
+	rpd=projectdraft * (5/100);
+	
+			  projectrevision=parseFloat(document.getElementById('projectrevisionBox').value);
+	rpr=projectrevision * (20/100);
+	
+			  classessay=parseFloat(document.getElementById('classessayBox').value);
+	essay=classessay * (10/100);
+	
+			  final=parseFloat(document.getElementById('finalBox').value);
+	fe=final * (30/100);
+	
+	total=dbq + fd + crv + rpd + rpr + essay + fe;
+	document.getElementById('outputDiv').innerHTML=
+		'Your overall course average is: ' +  total;">
+<hr>
+ <div id="outputDiv"> </div>
+ </body>
+</html>
+ 
+ 
+	
+	
+	
